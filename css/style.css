@@ -1,0 +1,725 @@
+/*NAVABAR*/
+#top{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    z-index: 999;
+}
+.navbar{
+    font-weight: 700;
+    font-family: 'Krona One', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    z-index: 99;
+}
+.wrap-nav{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    padding: 0 15px ;
+}
+.nav-item a{
+    color: white;
+    cursor: pointer;
+    font-size: .8rem;
+}
+.nav-item a:hover{
+    color: tomato;
+}
+.logo img{
+    width: 50%;
+    
+}
+/*Сarusel*/
+.carusel{
+    font-family: 'Krona One', sans-serif;
+    background-size: auto 100%;
+    background-position: 50% 100%;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+.item{  
+}
+.item-carusel-one{
+    width: 100%;
+    min-height: 100vh;
+    background-size: 100%;
+    background-position: 50% 100%;
+    background: url(../images/carusel/banner1.jpg)no-repeat;
+    object-fit:cover;    
+    width: 100%;
+
+}
+.content-item{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    opacity: .5;
+}
+.content-item.active{
+    transition: all 1s;
+    opacity: 1;
+    transform: translate(-50%,-30%);
+}
+.btn{
+    margin: 50px 0;
+}
+.link{
+    white-space:nowrap;    
+    padding: 15px 25px;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+}
+/* Слайдер */
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list{
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    display: none;
+    background: none;
+    border: none;
+    z-index: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*Сам слайдер*/
+.slider{
+    font-family: 'Krona One', sans-serif;
+    min-height: 100vh;
+}
+.slider-item{
+    position: relative;
+    min-height: 100vh;
+    background-size: auto 100%;
+}
+.item-one{
+    background: url(../images/carusel/banner1.jpg) no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+.item-two{
+    background: url(../images/carusel/banner2.jpg) no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+.item-three{
+    background: url(../images/carusel/banner3.jpg) no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%,-95%);
+    z-index: 999;
+}
+.slider .slick-dots li{
+    margin:0 10px;
+    list-style: none;
+}
+.slider .slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    opacity: .3;
+
+}
+.slider .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 2px solid tomato;
+    opacity: 1;
+}
+
+/*Massage*/
+.massage-wrap{
+    padding: 50px 0;
+    background: url(../images/home-bgrnd.jpg);
+}
+.content-massage{
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+}
+.content-massage h1{
+    font-size: 1.5rem;
+    color: tomato;
+    padding: 10px 0;
+}
+.content-massage h2{
+    font-size: 1rem;
+    color: white;
+}
+.wrap-fields{
+    padding: 50px 0;
+}
+.wrap-input{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.wrap-input input{
+    margin: 5px 0;
+    padding: 10px;
+    width: 70%;
+}
+.link-two{
+    width: 70%;
+    position: absolute;
+    white-space: nowrap;    
+    padding: 15px 45px;
+    background-color: tomato;
+    border-radius: 5px;
+    color: white;
+    transform: translate(-50%,10%);
+
+}
+
+/*Conditions*/
+.wrap-conditions{
+    overflow-x: hidden;
+    font-family: 'Krona One', sans-serif;
+    background-image: url(../images/conditions/bg.jpg);
+    padding: 30px 0;
+}
+.item-conditions {
+    margin: 15px 0;
+}
+.wrap-info-conditions#unicable{
+
+    transform: translate(120%,0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.wrap-info-conditions#unicable.active{
+
+    transform: translate(0,0);
+    opacity: 1;
+}
+.wrap-info-conditions{
+
+    transform: translate(-120%,0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.wrap-info-conditions.active{
+    transform: translate(0,0);
+    opacity: 1;
+}
+.wrap-info-conditions h1{
+    font-weight: 500;
+}
+.wrap-info-conditions div{
+    line-height: 180%;
+    padding: 15px 0;
+    color: #666666;
+}
+.link-conditions{
+    cursor: pointer;
+    color: tomato;
+}
+.link-conditions :hover{
+    color: black;
+}
+.photo-conditions{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* second slider */
+.slider-second{
+    background: url(../images/slider/testimonial-bg.jpg)no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+.absolute-h-one{
+    font-family: 'Krona One', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    z-index: 999;
+    color: white;
+    max-width: 770px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
+}
+.second-slider-item {
+    font-family: 'Krona One', sans-serif;
+    padding: 100px 0;
+    text-align: center;
+}
+.wrap-icon{
+    width: 25%;
+    margin: 15px auto;
+}
+.second-slider-item div:nth-child(2){
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+}
+.wrap-icon img{
+    border-radius: 50%;
+}
+.second-slider-item div:nth-child(3){
+    padding: 15px 0;
+    color: white;
+    font-weight: 700;
+
+}
+.second-slider-item div:nth-child(3) span{
+    cursor: pointer;
+    color: yellow;
+}
+/*products*/
+.wrap-products{
+    font-family: 'Krona One', sans-serif;
+    padding: 30px 0;
+}
+.title{
+    padding: 30px 0;
+    text-align: center;
+}
+.title h1{
+    color: tomato;
+}
+.title h2{
+    font-weight: 500;
+}
+.products{
+    display: block;
+}
+.products-item{
+    padding: 1px;
+    margin: 15px;
+    border: solid 1px #000;
+}
+#left{
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%,0);
+    transition: ease all 1s;
+}
+#right{
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(50%,0);
+    transition: ease all 1s;
+}
+#left.active{
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0%,0);
+}
+#right.active{
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0%,0);
+}
+.wrap-upper-half{
+    padding: 30px 0;
+    text-align: center;
+    background: #272624;
+}
+.wrap-upper-half h1:nth-child(1){
+    font-size: 2rem;
+    padding: 5px 0;
+    color: white;
+}
+.wrap-upper-half h1:nth-child(3){
+    color: white;
+    font-size: 5rem;
+    font-weight: 100;
+}
+.wrap-upper-half div:nth-child(2){
+    height: 2px;
+    background: rgba(255,255,255,.3);
+    width: 40px;
+    margin: 15px auto;
+}
+.wrap-upper-half div:nth-child(4){
+    font-size: 1rem;
+    color: white;
+
+}
+.advantages{
+    padding: 15px 0;
+}
+.advantages li{
+    padding: 10px 15px;
+    color:rgb(126, 125, 125);
+}
+.line{
+    height: 1px;
+    background: rgba(190, 189, 189, 0.3);
+    width: 100%;
+}
+.wrap-order{   
+    position: relative;
+    max-width: 140px;
+    white-space: nowrap;
+    margin: 30px auto;
+} 
+.order{
+    padding: 15px 25px;
+    color: white;
+    background: #272624;
+    transition: all 1s ease;
+}
+.order :hover{
+
+    background:#000 ;
+}
+/* palse-comletion */
+.place-comletion{
+    padding: 30px 0;
+    background: url(../images/home-bgrnd.jpg) no-repeat;
+    background-size: auto 100%;
+    font-family: 'Krona One', sans-serif;
+}
+.place-comletion h1{
+    color: tomato;
+    text-align: center;
+}
+.place-comletion h2{
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+.wrap-contact{
+    padding:15px;
+    color: white;
+}
+.contact-item{
+    font-weight: 600;
+    padding: 2px 0;
+}
+.wrap-form{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.input-item{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.input-item input{
+    border-radius: 3px; 
+    border: none; 
+    outline:none;
+    padding: 10px;
+    width: 100%;
+}
+#massage{
+    padding-bottom:100px;
+}
+.wrap-link{
+    margin: 15px auto;
+    width: 140px;
+}
+/* footer */
+.footer{
+    font-family: 'Krona One', sans-serif;
+    padding: 45px 0;
+    font-weight: 700;
+    font-size: .8rem;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+.wrap-pages{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#rights{
+    color: #666666;
+    padding: 10px 0;
+    text-align: center;
+}
+.wrap-pages div a{
+    cursor: pointer;
+    color: black;
+    padding: 15px;
+}
+@media (min-width: 768px){
+    .carusel{
+        background-size:100%;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 99;
+    }
+    .content-item h1{
+        font-size: 4rem;
+        white-space: nowrap;
+    }
+    .content-item h2{
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .nav-item a{
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+    .link{
+        padding: 20px 20px;
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    .logo img{
+        width: 80%;
+        
+    }
+    .wrap-fields{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrap-fields form{
+        margin: 30px ;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+    }
+    .wrap-input{
+        margin:0 10px;
+        width: 25%;
+        height: 100%;
+    }
+    
+    .wrap-input input{
+        vertical-align: middle;
+        margin: 5px;
+        padding: 10px 10px;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .content-massage h1{
+        font-size: 2rem;
+
+    }
+    .content-massage h2{
+        font-size: 1.5rem;
+        color: white;
+    }
+    /*conditions*/
+    .item-conditions{
+        display: inline-flex;
+        justify-content: space-between;
+        
+    }
+    .wrap-info-conditions{
+        height: 50%;
+        margin: auto 0;
+        width: 50%;
+    }
+    .wrap-info-conditions h1{
+        font-weight: 500;
+    }
+    .wrap-info-conditions div{
+        line-height: 180%;
+        padding: 15px 0;
+        color: #555555;
+    }
+    .link-conditions{
+        cursor: pointer;
+        color: tomato;
+    }
+    .link-conditions :hover{
+        color: black;
+    }
+    #unicable{
+        text-align: end;
+        order: 2;
+    }
+    .photo-conditions{
+        order: 2;
+        width: 30%;
+        text-align: end;
+        margin: 0
+    }
+    /*second slider */
+    .slider-second{
+        background: url(../images/slider/testimonial-bg.jpg)no-repeat;
+        background-attachment: fixed;
+    }
+    .absolute-h-one{
+        font-size: 2rem;
+    }
+    .wrap-icon{
+        width: 5%;
+    }
+    .second-slider-item div:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .wrap-icon img{
+        border-radius: 50%;
+    }
+    .second-slider-item div:nth-child(3){
+        padding: 15px 0;
+        color: white;
+        font-weight: 700;
+    
+    }
+    .second-slider-item div:nth-child(3){
+        font-size: 1.5rem;
+    }
+    .second-slider-item div:nth-child(3) span{
+        font-size: rem;
+        cursor: pointer;
+        color: yellow;
+    }
+    .products{
+        display: flex;
+        justify-content: space-between;        
+    }
+    .products-item{
+        width: 30%;
+    }
+    /* palce-comletion */
+    .place-comletion{
+        background: url(../images/home-bgrnd.jpg) no-repeat;
+        background-size:  100%;
+
+    }
+    .place-comletion h1{
+        padding-top: 40px;
+    }
+    .place-comletion h2{
+        padding-bottom: 70px;
+    }
+    .wrap-contact{
+        display: flex;
+        justify-content: space-between;
+        padding:15px;
+        color: white;
+        padding-bottom: 70px;
+    }
+    .contact-item{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .wrap-form{
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }
+    .for-flex{
+        padding: 0 15px;
+        width: 50%;
+    }
+    .input-item{
+        width: 100%;
+        padding: 10px;
+
+    }
+    .input-item input{
+        border-radius: 3px; 
+        border: none; 
+        outline:none;
+        padding: 15px;
+        width: 100%;
+    }
+    #massage{
+        height: 175px;
+    }
+    .wrap-link{
+        margin: 15px auto;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1400px){
+    .item-one{
+        background: url(../images/carusel/banner1.jpg) no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .item-two{
+        background: url(../images/carusel/banner2.jpg) no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .item-three{
+        background: url(../images/carusel/banner3.jpg) no-repeat;
+        background-size:100%;
+        background-attachment: fixed;
+    }
+    .slider-second{
+        background: url(../images/slider/testimonial-bg.jpg)no-repeat;
+        background-size:100%;
+        background-attachment: fixed;
+    }
+    .place-comletion{
+        background: url(../images/home-bgrnd.jpg) no-repeat;
+        background-size:  100%;
+
+    }
+}
